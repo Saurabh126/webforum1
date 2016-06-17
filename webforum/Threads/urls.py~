@@ -1,0 +1,9 @@
+from django.conf.urls import url
+
+from . import views
+
+app_name = 'Threads'
+urlpatterns  =  [
+    url(r'^$', views.questionspage, name='questionspage'),
+    url(r'^(?P<question_id>[0-9]+)/$', views.answerpage, name='answerpage'),
+]

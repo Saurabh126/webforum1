@@ -1,0 +1,12 @@
+<form action="{% url 'Login:addeduser' %}" method="post">
+{% csrf_token %}
+New Used id : 
+<input type="text" name="newuserid" /></br>
+Password : 
+<input type="password" name="newpassword" /></br>
+Re-type password : 
+<input type="password" name="repassword" /></br>
+<input type="submit" value="Register" />
+</form>
+
+
